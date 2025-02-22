@@ -2,20 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #d1d1d6;
+  border-radius: 12px;
+  padding: 10px 14px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: #007aff;
+  box-shadow: 0px 0px 8px rgba(0, 122, 255, 0.3);
+}
+
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #007aff;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
 }

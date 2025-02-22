@@ -1,0 +1,46 @@
+{
+   "users": [
+    {
+      "id": 1,
+      "name": "Игорь Смирнов",
+      "email": "igor@example.com",
+      "phone": "+7 999 123-45-67",
+      "website": "igor-smirnov.com",
+      "avatar": "/avatars/user1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Анна Иванова",
+      "email": "anna@example.com",
+      "phone": "+7 987 654-32-10",
+      "website": "anna-ivanova.com",
+      "avatar": "/avatars/user2.avif"
+    },
+    {
+      "id": 3,
+      "name": "Дмитрий Соколов",
+      "email": "dmitry@example.com",
+      "phone": "+7 901 111-22-33",
+      "website": "dmitry-sokolov.com",
+      "avatar": "/avatars/user3.jpg"
+    }
+  ],
+    "posts": [
+      {
+        "id": 1,
+        "title": "Первая запись",
+        "body": "Это мой первый пост в блоге. Добро пожаловать!"
+      },
+      {
+        "id": 2,
+        "title": "Советы по программированию",
+        "body": "Сегодня я поделюсь полезными советами по JavaScript."
+      },
+      {
+        "id": 3,
+        "title": "Как я изучал Next.js",
+        "body": "Расскажу, как я осваивал Next.js и какие советы могу дать."
+      }
+    ]
+  }
+  
