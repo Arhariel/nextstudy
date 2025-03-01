@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen dark:bg-gray-900 dark:text-gray-100">
       <h1 className="text-3xl font-bold">Добро пожаловать!</h1>
       <p className="text-gray-600 mt-4">Выберите раздел:</p>
       <div className="flex gap-4 mt-6">

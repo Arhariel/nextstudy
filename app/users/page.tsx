@@ -4,14 +4,15 @@ import data from "../../data/users.json";
 import Image from "next/image"; 
 
 export default function Users() {
-  const [search, setSearch] = useState("");
+const [search, setSearch] = useState("");
+
 
   const filteredUsers = data.users.filter((user) =>
     user.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto dark:bg-gray-900 dark:text-gray-100">
       <h1 className="text-3xl font-semibold mb-6 text-center">Пользователи</h1>
       <input
         type="text"
@@ -23,7 +24,7 @@ export default function Users() {
       {filteredUsers.length > 0 ? (
         <ul className="space-y-4">
           {filteredUsers.map((user) => (
-            <li key={user.id} className="card flex items-center gap-4">
+            <li key={user.id} className="card flex items-center gap-4 dark:bg-gray-700 dark:text-gray-100">
               <Image
                 src={user.avatar} 
                 alt={user.name}
@@ -33,7 +34,7 @@ export default function Users() {
                 style={{ objectFit: "cover" }}
               />
               <div className="flex flex-col">
-                <a href={`/profile/${user.id}`} className="text-blue-600 font-semibold hover:underline">
+                <a href={`/profile/${user.id}`} className="text-blue-600 font-semibold hover:underline  dark:text-white-100">
                   {user.name}
                 </a>
                 <span className="text-gray-500 text-sm">{user.email}</span>
