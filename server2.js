@@ -1,4 +1,17 @@
 const http = require('http');
+const { readFileAsync, reverseTextPromise, processFiles } = require('./fileswork');
+
+readFileAsync('file2.txt', (err, data) => {
+  if (err) console.error(err);
+  else console.log('UPPERCASE:', data);
+});
+
+reverseTextPromise('file1.txt')
+  .then((data) => console.log('REVERSED:', data))
+  .catch(console.error);
+
+processFiles().then((data) => console.log('MERGED FILES:', data));
+
 const server = http.createServer((req, res) => {
   if (req.url === '/hello' && req.method === 'GET') {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
